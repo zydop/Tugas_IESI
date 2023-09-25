@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body id="top" class="bg-light">
+    <!-- Header -->
+    <header class="d-print-none">
+        <div class="container text-center text-lg-left">
+            <div class="pt-4 clearfix">
+                <h1 class="site-title mb-0">Welcome!</h1>
+                <div class="site-nav">
+                    <nav role="navigation">
+                        <ul class="nav justify-content-center">
+                        
+    </header>
+
+    <!-- Main Content (Pencarian Tiket) -->
+    <main class="page-content">
+        <div class="container">
+            <div class="search-section">
+                <h1 class="search-title">Cari Tiket</h1>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Nama Event atau Lokasi">
+                    <select id="genreDropdown">
+                        <option value="">Semua Genre</option>
+                        <option value="Musik">Musik</option>
+                        <option value="Seni">Seni</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                    <button onclick="searchEvent()">Cari</button>
+                </div>
+                <div id="searchResults" class="results">
+                    <!-- Hasil pencarian akan ditampilkan di sini -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+ <footer class="d-print-none">
+    <div class="container text-center text-lg-right">
+        <div class="pt-4 clearfix">
+            <h3 class="site-title mb-0">About</h3>
+            <div class="site-nav">
+                <nav role="navigation">
+                    <ul class="nav justify-content-center">
+                        <!-- Isi tautan menu footer di sini -->
+                    </h>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

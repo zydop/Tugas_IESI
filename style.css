@@ -1,0 +1,197 @@
+/* Style untuk Timeline Card */
+.timeline-card {
+    position: relative;
+    margin-left: 16px;
+  }
+  .site-title {
+      text-align: center; /* Mengatur teks menjadi tengah secara horizontal */
+      line-height: 2; /* Mengatur teks menjadi tengah secara vertikal */
+  }
+  
+  /* Style untuk Timeline Body */
+  .timeline-body {
+    border-left: 2px solid #00a6ff;
+  }
+  
+  /* Style Global */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1140px;
+  }
+  
+  .site-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  
+  .nav-link {
+    padding: 0;
+    font-size: 1.25rem;
+    line-height: 2.75rem;
+    color: inherit;
+    opacity: 0.8;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: inherit;
+    opacity: 1;
+  }
+  
+  .nav-item + .nav-item {
+    margin-left: 1rem;
+  }
+  
+  .cover {
+    height: 500px;
+  }
+  
+  .cover > img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: auto;
+  }
+  
+  .progress-bar {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .text-small {
+    font-size: 0.85rem;
+  }
+  
+  /* Style untuk Main Content (Pencarian Tiket) */
+  .search-section {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .search-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  #searchInput {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 60%;
+  }
+  
+  #genreDropdown {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #0079A9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005A8C;
+  }
+  
+  .results {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  /* Style untuk Header */
+  header {
+    background-color: #0079A9; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 1rem 0; /* Padding atas dan bawah header */
+  }
+  
+  /* Style untuk Footer */
+  footer {
+    background-color: #0079A9; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+    padding: 1rem 0; /* Padding atas dan bawah footer */
+  }
+  
+  /* Style untuk teks tautan dalam footer */
+  footer a:not(.nav-link) {
+    color: white; /* Warna teks tautan dalam footer */
+    border-bottom: 1px dashed;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Media Queries */
+  @media (min-width: 48em) {
+    .site-title {
+      float: center;
+    }
+    .site-nav {
+      float: right;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .p-5 {
+      padding: 2.5rem 2rem !important;
+    }
+  }
+  
+  @media print {
+    body.bg-light {
+      background-color: #fff !important;
+    }
+    .container {
+      width: auto;
+      max-width: 100%;
+      padding: 0;
+    }
+    .cover {
+      height: 360px;
+      margin-bottom: 1.5rem;
+    }
+    .cover > img {
+      display: none;
+    }
+    .shadow-1-strong {
+      box-shadow: none !important;
+    }
+    .resume-container > .my-5 {
+      margin: 0 !important;
+    }
+    .my-5.p-5 {
+      padding: 1.5rem 0 !important;
+    }
+    .about-section,
+    .education-section,
+    .certifications-section,
+    .page-break {
+      padding-top: 5rem;
+      page-break-before: always;
+    }
+  }
+  
